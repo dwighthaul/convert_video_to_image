@@ -1,14 +1,15 @@
-With this project you vill be able to convert a movie into images. 
+With this project you will be able to convert a movie into images.
 
 
 Requirements : 
 You should have installed openCV v3.3.1
 
-You need to have a data and imageCreate folder.
+You need to have a data and imageCreate folder under the folder you run the scripts.
 
 
 
-Step 1 : 
+
+---------- Step 1 :
 Convert the movie into data. 
 The algotithm takes a data and each X seconds or x frames, an average color is compute from all the pixel's pixels of the frame. This process is make until the video reach the end, then the values are stored into a file under the "data" folder. The name of the file is the name of the movie given as a parameter. 
 
@@ -23,7 +24,7 @@ python convert_video_to_data_frame_small.py path_to_the_video
 exemple : python convert_video_to_data_frame_small.py /home/you_name/Videos/Avatar.mp4
 
 
-Step 2 : 
+---------- Step 2 : 
 Convert the data into image.
 The algotithm takes the values of the file and create the picture. It divide the image into N strips, N the number of records, and each strips is colored with the value of the records.
 
